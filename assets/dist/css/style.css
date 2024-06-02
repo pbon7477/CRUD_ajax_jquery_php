@@ -1,0 +1,73 @@
+body{
+    background:#272b32;
+}
+
+
+
+.caja1 {
+    display: flex;
+    height: 500px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    /* border:1px solid rgb(109, 1, 82); */
+    
+}
+
+.cajita{
+    width:24%;
+    border:1px dashed #999;
+    padding: 3px;
+    margin: 2px;
+    background:#242325;
+
+}
+
+
+
+h1,h2,h3,h4,h5,h6, p{
+    margin:0;
+    padding: 0;
+}
+
+
+.fondo1{
+    background-image: url('../../../images/001.jpg');
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.fondo2{
+    background-image: url('../../../images/002.jpg');
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.fondo3{
+    background-image: url('../../../images/003.jpg');
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.fondo4{
+    background-image: url('../../../images/004.jpg');
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.fondo5{
+    background-image: url('../../../images/002.jpg');
+    border-image: fill 0 linear-gradient(#0009,#000);
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    background-repeat:no-repeat ;
+}
+
+.transparent{ 
+    background:rgba(47, 45, 51, 0.692);
+};
+

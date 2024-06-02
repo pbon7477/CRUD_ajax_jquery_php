@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ajax y php</title>
+    <link rel="stylesheet" href="assets/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/dist/css/style.css" />
+  </head>
+  <body>
+    <div class="container-fluid my-0 py-3 bg-dark">
+      <div class="container transparent text-white py-2 rounded">
+        <h4>:: CRUD</h4>
+        <h6>:: Ajax y php</h6>
+        <hr />
+
+
+        
+
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="lista-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#lista"
+              type="button"
+              role="tab"
+              aria-controls="lista"
+              aria-selected="true"
+            >
+              Lista
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="crear-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#crear"
+              type="button"
+              role="tab"
+              aria-controls="crear"
+              aria-selected="false"
+            >
+              Crear
+            </button>
+          </li>
+          
+        </ul>
+        
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <div
+            class="tab-pane active"
+            id="lista"
+            role="tabpanel"
+            aria-labelledby="lista-tab"
+          >
+             
+          <!-- listar-->
+          <br>
+          <button type="button" class="btn btn-primary" id="leerEmpleados">
+            Lista Empleados
+          </button>
+  
+          <hr />
+          <div class="alert alert-primary" role="alert">
+            <ul id="listaEmpleados">
+              <li>Lista empleados</li>
+            </ul>
+          </div>
+          <!-- end listar-->
+          
+          </div>
+          <div
+            class="tab-pane"
+            id="crear"
+            role="tabpanel"
+            aria-labelledby="crear-tab"
+          >
+             
+            <!-- formulario crear -->
+              
+              <div class="row">
+                <div class="col p-2">
+                  <div class="form-group">
+                  <input type="hidden" id='id' >
+                  <label for="nombre">Nombre</label>
+                  <input type="text" class="form-control" id="nombre"><br>
+                  <label for="puesto">Puesto</label>
+                  <input type="text" class="form-control" id="puesto"><br>
+                  <label for="edad">Edad</label>
+                  <input type="text" class="form-control col-2" id="edad"><br>
+                  <button id="crearEmpleado" class="btn btn-primary">Crear Empleado</button>
+                  <button id="editarEmpleado" class="btn btn-warning d-none">Editar Empleado</button>
+                  </div>
+                  
+                </div>
+              </div>
+
+            <!-- end formulario crear -->
+
+          </div>
+         
+        </div>
+        
+
+
+
+        <!---->
+
+        <hr>
+        
+      </div>
+    </div>
+
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
